@@ -1,5 +1,5 @@
-#ifndef IOTGATE-ENERGYD_H
-#define IOTGATE-ENERGYD_H
+#ifndef IOTGATE_ENERGYD_H
+#define IOTGATE_ENERGYD_H
 
 #define GRID(x)               .withProperty("grid", x)
 #define POWERSOURCE           .withProperty("type", "S")
