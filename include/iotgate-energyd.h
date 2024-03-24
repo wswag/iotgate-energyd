@@ -6,7 +6,7 @@
 #define EXT_POWERSOURCE       .withProperty("type", "S").withProperty("ext", true)
 #define WHITE_LOAD            .withProperty("type", "L")
 #define CONTROLLABLE_LOAD     .withProperty("type", "CL")
-#define BATTERY               .withProperty("type", "B")
+#define BATTERY(cap_kwh)      .withProperty("type", "B").withProperty("cap", cap_kwh)
 #define SWITCH_CONTROLLER(x)  .withProperty("type", "SC").withProperty("an", #x)
 #define TRIGGER_CONTROLLER(x) .withProperty("type", "TC").withProperty("an", #x)
 #define DUTY_CONTROLLER(x)    .withProperty("type", "DC").withProperty("an", #x)
