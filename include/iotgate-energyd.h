@@ -1,8 +1,6 @@
 #ifndef IOTGATE-ENERGYD_H
 #define IOTGATE-ENERGYD_H
 
-#include <iotgate.h>
-
 #define GRID(x)               .withProperty("grid", x)
 #define POWERSOURCE           .withProperty("type", "S")
 #define EXT_POWERSOURCE       .withProperty("type", "S").withProperty("ext", true)
