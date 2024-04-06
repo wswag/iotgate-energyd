@@ -16,6 +16,7 @@
 #define PRIORITY(x)           .withProperty("prio", x)
 #define TIMEFRAME(x)          .withProperty("timeframe", x)
 #define LAZY                  .withProperty("lazy", true)
+#define BASIC_PROVISION       .withProperty("bp", true)
 
 double soc_to_requesttime(double soc, double capacityKwh, double chargePowerKw);
 
