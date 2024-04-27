@@ -13,7 +13,7 @@
 #define SWITCH_REQUEST(x)     .withProperty("type", "SR").withProperty("an", #x)
 #define DUTY_CYCLE_REQUEST(x) .withProperty("type", "DR").withProperty("an", #x)
 #define RUNTIME_REQUEST(x)    .withProperty("type", "RR").withProperty("an", #x)
-#define AUTOMATIC_CAPABLE(x)  .withProperty("auto", 1)    
+#define AUTOMATIC_CAPABLE     .withProperty("auto", 1)    
 #define PRIORITY(x)           .withProperty("prio", x)
 #define TIMEFRAME(x)          .withProperty("timeframe", x)
 #define DEBOUNCE(x)           .withProperty("db", x)
