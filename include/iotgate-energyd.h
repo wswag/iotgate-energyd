@@ -7,6 +7,7 @@
 #define WHITE_LOAD            .withProperty("type", "L")
 #define CONTROLLABLE_LOAD     .withProperty("type", "CL")
 #define BATTERY(cap_kwh)      .withProperty("type", "B").withProperty("cap", cap_kwh)
+#define RESIDUAL_BATTERY(cap_kwh) .withProperty("type", "B").withProperty("cap", cap_kwh).withProperty("rb", 1)
 #define SWITCH_CONTROLLER(x)  .withProperty("type", "SC").withProperty("an", #x)
 #define TRIGGER_CONTROLLER(x) .withProperty("type", "TC").withProperty("an", #x)
 #define DUTY_CONTROLLER(x)    .withProperty("type", "DC").withProperty("an", #x)
@@ -15,6 +16,7 @@
 #define RUNTIME_REQUEST(x)    .withProperty("type", "RR").withProperty("an", #x)
 #define PRIORITY(x)           .withProperty("prio", x)
 #define TIMEFRAME(x)          .withProperty("timeframe", x)
+#define DEBOUNCE(x)           .withProperty("db", x)
 #define LAZY                  .withProperty("lazy", true)
 #define BASIC_PROVISION(x)    .withProperty("bp", x)
 
