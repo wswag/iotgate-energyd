@@ -3,6 +3,10 @@
 
 #define GRID(x)               .withProperty("grid", x)
 #define POWERSOURCE           .withProperty("type", "S")
+#define AZIMUTH(x)            .withProperty("az", x)
+#define LONGITUDE(x)          .withProperty("lon", x)
+#define LATITUDE(x)           .withProperty("lat", x)
+#define DECLINATION(x)        .withProperty("dec", x)
 #define EXT_POWERSOURCE       .withProperty("type", "S").withProperty("ext", true)
 #define WHITE_LOAD            .withProperty("type", "L")
 #define CONTROLLABLE_LOAD     .withProperty("type", "CL")
