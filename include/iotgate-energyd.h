@@ -21,8 +21,8 @@
 #define ENERGY_REQUEST(x)     .withProperty("type", "ER").withProperty("an", #x)
 #define AUTOMATIC_CAPABLE     .withProperty("auto", 1)    
 #define PRIORITY(x)           .withProperty("prio", x)
-#define TIMEFRAME(x)          .withProperty("timeframe", x)
-#define DEBOUNCE(x)           .withProperty("db", x)
+#define TIMEFRAME(x)          .withProperty("timeframe", x / (1 SEC))
+#define DEBOUNCE(x)           .withProperty("db", x / (1 SEC))
 #define LAZY                  .withProperty("lazy", true)
 #define BASIC_PROVISION(x)    .withProperty("bp", x)
 
